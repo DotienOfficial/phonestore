@@ -1,0 +1,658 @@
+* { 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+:root { 
+    --maincolor: #A4160B; 
+    --navcolor: #FEFCF9;
+    --postercolor: #F2D287; 
+
+}
+/* Navigation */
+
+nav { 
+    background-color: var(--navcolor);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* logobox */
+.logobox { 
+    padding-left: 10px;
+}
+.logobox > img { 
+    width: auto;
+    height: 50px;
+}
+
+/* menu */
+.navi { 
+    overflow: hidden;
+}
+.navi > ul { 
+    list-style-type: none;
+}
+.navi > ul li {
+    float: left;
+}
+
+.navi > ul li a { 
+    line-height: 6vh;
+    padding-left: 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--maincolor);
+}
+.navi > ul li::after {
+    content: "";
+    clear: both;
+}
+/* hotline */
+.hotline-box { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 300px;
+    background-color: var(--maincolor);
+    border-radius: 50px 40px 40px 50px;
+}
+.hotline-box .icon-box { 
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--maincolor);
+    position: relative;
+    left: -10px;
+}
+.hotline-box > span { 
+    color: white;
+    font-size: 1.5em;
+    line-height: 50px;
+    padding-left: 10px;
+}
+/* Hero */
+.hero { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 500px;
+    background-color: var(--postercolor);
+    margin-top: 30px;
+
+}
+
+.image-box {
+    height: 500px;
+    width: 70vw;
+    background-image: url(bin/poster.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.side-form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 30vw;
+    min-width: 500px;
+    border: 2px solid white;
+    height: 550px;
+    background-color: var(--postercolor);
+    border-radius: 10px 0px 0px 10px;
+
+}
+.sale-title { 
+    font-size: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sale-title > .title1 { 
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--maincolor);
+    border-radius: 10px;
+    color: white;
+}
+.sale-title .title2 { 
+    display: block;
+    width: 80%;
+    padding: 5px 0px;
+    border: 2px solid var(--maincolor);
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    border-top: solid white;
+    color: var(--maincolor);
+    margin-bottom: 40px;
+}
+
+.form-input { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+input[type=text] { 
+    padding: 10px 10px;
+    width: 20vw;
+    min-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+input[type=button] { 
+    padding: 10px 10px;
+    width: 20vw;
+    min-width: 400px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: white;
+    background-color: var(--maincolor);
+}
+
+.side-form span { 
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/* Store info */
+.store-info { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* store title */
+.store-title { 
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.store-title #sub, #sub2 { 
+    color: gray;
+    font-size: 1.2em;
+    text-align: center;
+}
+.store-title #main { 
+    color: var(--maincolor);
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.store-icons { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 90px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 80vw;
+}
+.store-icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+.store-icon-box-indetails { 
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 120px;
+    height: 120px;
+
+    /* background-color: white; */
+    border-radius: 50%;
+    border: 2px solid var(--maincolor);
+    color: var(--maincolor);
+    font-size: 2.5em;
+}
+ .store-icon-box-content { 
+    margin-top: 20px;
+    font-size: 1.2em;
+ }
+
+.main-store { 
+    background-color: var(--maincolor);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 30px;
+    height: 1500px;
+}
+.iphone, .applewatch { 
+    background-color: var(--maincolor);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 30px;} 
+
+.iphone {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.iphone-title { 
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.iphone-title span { 
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 2;
+    padding-left: 20px;
+}
+.iphone-title::after {
+    content: "";
+    z-index: 1;
+    background-color: yellow;
+    display: block;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    transform: skewX(-15deg);
+}
+.iphone-title  img{ 
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: -20px;
+    z-index: 3;
+}
+.product-gallery { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+.product-card { 
+    background-color: white;
+    height: 520px;
+    width: 300px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.saleoff { 
+    margin-top: 10px;
+    background-color: var(--maincolor);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+.product-image-holder { 
+    width: 250px;
+    height: 300px;
+    
+    background-image: url(bin/iphone1.png);
+    background-size: cover;
+
+}
+.product-title { 
+    padding-left: 10px;
+}
+.product-title span:first-child { 
+    font-size: 1.2em;
+    display: block;
+    font-weight: bold;
+}
+
+.product-price { 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.product-price .old-price { 
+    text-decoration: line-through;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+.product-price .new-price { 
+    color: var(--maincolor);
+    font-size: 1.2em;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.buy-button { 
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-button button { 
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--maincolor);
+    color: white;
+    margin-bottom: 10px;
+}
+.follower span { 
+    font-size: 0.8em;
+    color: gray;
+}
+#applewatch { 
+    margin-left: 30px;
+}
+#applewatchimage { 
+    transform: translateX(-20px) scale(1.2);
+}
+
+.applewatchholder { 
+    background-image: url(bin/watch1.png);
+}
+.camket { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.camketcontent { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; 
+    height: 100px;
+    background-color: white;
+    color: var(--maincolor);
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px gray;
+    font-size: 1.2em;
+}
+.camketcontent i { 
+    padding: 20px ;
+}
+.about { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+}
+.shopintro { 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10px;
+    min-width: 500px;
+}
+.shopintro p { 
+    text-align: justify;
+    padding: 30px;
+}
+.shopintro span { 
+    font-weight: bold;
+}
+.shopintro img { 
+    width: 80%;
+    height: auto;
+    align-self: center;
+}
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 500px; 
+}
+.contact-form-title {
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: var(--maincolor);
+    margin-bottom: 30px;
+}
+.contactform-details { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+.contactform-details label { 
+    font-size: 0.8em;
+    color: gray;
+}
+.contactform-details input:last-child { 
+    margin-top: 10px;
+}
+.gift, .gift-note  { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+.gift .gift-note img { 
+    width: 20px;
+    height: auto;
+}
+
+.gift-note { 
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--maincolor);
+    padding-top: 30px;
+    margin-top: 30px;
+    gap: 10px;
+}
+.footercolumn { 
+    flex: 1 1 auto; 
+}
+
+.column1 { 
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.column1 > p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+.column1 p span:first-child { 
+    font-size: 1.25em;
+    font-weight: bold;
+}
+iframe { 
+    max-height: 200px;
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+.column2, .column3 { 
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.column2 ul, .column3 ul {
+    margin-top: 30px;
+    list-style-type: none;
+    padding-inline-start: 0 !important;
+}
+.column2 ul li, .column3 ul li { 
+    padding-bottom: 10px;
+}
+.column2 ul li a, .column3 ul li a {
+    color: white;
+    text-decoration: none;
+}
+.column2 ul li a i, .column3 ul li a i { 
+    padding-right: 10px;
+}
+.absolute-footer { 
+    background-color: gray;
+    width: 100%;
+    height: 30px;
+
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    /* padding: -10px; */
+}
+/* End CSS */
+
+
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    nav { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .navi > ul {
+        padding-inline-start: 0px;
+    }
+    .navi > ul li {
+    float: none;
+    text-align: center;
+    }
+
+    .hotline-box { 
+        display: flex;
+    }
+    .store-icons { 
+        flex-direction: column;
+    }
+    .main-store { 
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .product-gallery { 
+        flex-direction: column;
+    }
+    .camket { 
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .about { 
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column2 { 
+        display: none;
+    }
+    .column1 { 
+        align-items: center;
+    }
+}
+
+/* Animation */
+
+.hotline-box { 
+    transition: transform 500ms linear;
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes heartbeat {
+    0% {   transform: scale(0.9, 0.9); }
+    25% {  transform: scale(1, 1);  }
+    50% {  transform: scale(0.9, 0.9);  }
+    75% {  transform: scale(1, 1);  }
+    100% {  transform: scale(0.9, 0.9);  }
+}
+.sale-title { 
+    transform: scale(1.2, 1.2);
+}
+
+input:focus { 
+    outline: none;
+}
+
+.store-icon-box { 
+    animation-name: pushup;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: none;
+}
+
+@keyframes pushup {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
